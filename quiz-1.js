@@ -81,31 +81,32 @@ if (cat11) { $("#category11").show("slow"); };
 { $("#closing").show("slow"); };
 }
     });});
-    function check() {
-        var c=0
-        var q1=document.quiz.q1.value;
-        var q2=document.quiz.q2.value;
-        var q3=document.quiz.q3.value;
-        var q4=document.quiz.q4.value;
-        var q5=document.quiz.q5.value;
-        var q6=document.quiz.q6.value;
-        var q7=document.quiz.q7.value;
-        var q8=document.quiz.q8.value;
-        var q9=document.quiz.q9.value;
-        var q10=document.quiz.q10.value;
-        var quiz=document.getElementById('result');
-        var quiz=document.getElementById("quiz");
-        if (q1=="Dennis Ritchie") {c++}
-        if (q1=="B Language") {c++}
-        if (q3=="High Level") {c++}
-        if (q4=="Difficult to understand and readability is questionable") {c++}
-        if (q5=="Human readable like language") {c++}
-        if (q6=="Procedural") {c++}
-        if (q7=="AT&T Bell Labs") {c++}
-        if (q8=="None") {c++}
-        if (q9=="Unix") {c++}
-        if (q10=="1972") {c++}
-        quiz.style.display="none";
-        
-        }
-        check();
+function check() {
+var c=0
+var q1=document.quiz.q1.value;
+var q2=document.quiz.q2.value;
+var q3=document.quiz.q3.value;
+var q4=document.quiz.q4.value;
+var q5=document.quiz.q5.value;
+var q6=document.quiz.q6.value;
+var q7=document.quiz.q7.value;
+var q8=document.quiz.q8.value;
+var q9=document.quiz.q9.value;
+var q10=document.quiz.q10.value;
+var quiz=document.getElementById('result');
+var quiz=document.getElementById("quiz");
+if (q1=="Dennis Ritchie") {c++}
+if (q2=="B Language") {c++}
+if (q3=="High Level") {c++}
+if (q4=="Difficult to understand and readability is questionable") {c++}
+if (q5=="Human readable like language") {c++}
+if (q6=="Procedural") {c++}
+if (q7=="AT&T Bell Labs") {c++}
+if (q8=="None") {c++}
+if (q9=="Unix") {c++}
+if (q10=="1972") {c++}
+quiz.style.display="none";
+
+result.textContent='${c}';
+
+}
