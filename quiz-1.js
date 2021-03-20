@@ -108,5 +108,9 @@ if (q10=="1972") {c++}
 quiz.style.display="none";
 
 result.textContent='${c}';
-
+if (c<=3) {
+result.textContent ='Your result is ${c}. You have failed the test.'
+} else {
+result.textContent ='Your result is ${c}. You have passed the test.'
+}
 }
